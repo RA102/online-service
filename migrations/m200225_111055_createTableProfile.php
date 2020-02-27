@@ -37,7 +37,7 @@ class m200225_111055_createTableProfile extends Migration
      */
     public function safeDown()
     {
-        echo "m200225_111055_createTableProfile cannot be reverted.\n";
+        $this->dropTable('profile');
 
         return false;
     }
